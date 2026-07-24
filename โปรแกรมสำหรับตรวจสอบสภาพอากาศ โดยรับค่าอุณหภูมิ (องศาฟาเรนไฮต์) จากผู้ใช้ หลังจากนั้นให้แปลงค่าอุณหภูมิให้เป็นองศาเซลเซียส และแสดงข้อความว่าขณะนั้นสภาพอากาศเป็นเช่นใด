@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+       Scanner kb = new Scanner(System.in);
+       double F, C;
+       System.out.println("=== Program check weather ===");
+       System.out.print("Input temperature (fahrenheit) : ");
+       F = kb.nextDouble();
+       C = (F - 32) * 5 / 9;
+       System.out.println("=== processing ===");
+       System.out.println("Temperature (celsius) : "+C);
+       System.out.print("Weather : ");
+       if(C < 23){
+           System.out.print("อากาศหนาวเย็น(cold)");
+       }if(C >= 23 && C < 28){
+           System.out.print("อากาศกำลังดี(cool)");
+       }if(C >= 28 && C < 33) {
+           System.out.print("อากาศอบอุ่น(warm)");
+       }if(C >= 33) {
+           System.out.print("อากาศร้อน(hot)");
+       }
+       }
+   }
