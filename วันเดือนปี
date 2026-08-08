@@ -1,0 +1,103 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int day, month, year;
+        int maxDay = 0;
+        day = kb.nextInt();
+        month = kb.nextInt();
+        year = kb.nextInt();
+
+        if (month == 1) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " JAN " + year);
+            }
+        } else if (month == 2) {
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                maxDay = 29;
+            } else {
+                maxDay = 28;
+            }
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " FEB " + year);
+            }
+        } else if (month == 3) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " MAR " + year);
+            }
+        } else if (month == 4) {
+            maxDay = 30;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " APR " + year);
+            }
+        } else if (month == 5) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " MAY " + year);
+            }
+        } else if (month == 6) {
+            maxDay = 30;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " JUN " + year);
+            }
+        } else if (month == 7) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " JUL " + year);
+            }
+        } else if (month == 8) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " AUG " + year);
+            }
+        } else if (month == 9) {
+            maxDay = 30;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " SEP " + year);
+            }
+        } else if (month == 10) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " OCT " + year);
+            }
+        } else if (month == 11) {
+            maxDay = 30;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " NOV " + year);
+            }
+        } else if (month == 12) {
+            maxDay = 31;
+            if (day < 1 || day > maxDay || month < 1 || month > 12) {
+                System.out.print("Invalid");
+            } else {
+                System.out.print(day + " DEC " + year);
+            }
+        } else {
+            System.out.print("Invalid");
+        }
+    }
+}
