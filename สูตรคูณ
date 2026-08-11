@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class yod2 {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int mul,num;
+        num = kb.nextInt();
+        int i = 1;
+        while(i <= 12){
+            mul = num * i;
+            System.out.println(num+" x " + i +" = "+ mul);
+            i = i + 1;
+        }
+    }
+}
